@@ -1,2 +1,1 @@
-# vacaciones
-tengo un mes para aprender python
+me costo usar exponentes y recursividad, tambien las partes logicas me costaba como empezar a trabajar y la mayoria de mis solociones no eran 100% eficases, siempre tenian algun fallo
