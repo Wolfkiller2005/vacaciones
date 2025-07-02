@@ -1,0 +1,176 @@
+'''
+1. Escriba una función suma_impar(num) que reciba un número entero y
+sume los dígitos que sean impares.
+e:
+s:
+r:
+'''
+def suma_impar(num):
+    return
+
+print(suma_impar(482401))      # resultado 1
+print(suma_impar(3579))      # resultado 24
+
+'''
+2. Escriba una función cuente_par(num) que reciba un número
+entero y cuente los dígitos que sean pares.
+e:
+s:
+r:
+'''
+
+def cuente_par(num):
+    return
+
+print(cuente_par(482401))  # resultado 5
+print(cuente_par(3579))  # resultado 0
+
+'''
+3.  Escriba una función booleana todos_pares(num) que recibe un
+número entero y verifica si el número dado tiene todos sus dígitos pares. La función debe comportarse de la siguiente forma:
+e:
+s:
+r:
+'''
+
+def todos_pares(num):
+    return
+
+print(todos_pares(80642))
+    # resultado True
+print(todos_pares(201462))
+    # resultado False
+
+'''
+4.  Escriba una función booleana hay_cero(num) que recibe
+un número entero y verifica si el número dado tiene al menos
+un dígito cero.
+e:
+s:
+r:
+'''
+
+def hay_cero(num):
+    return
+
+print(hay_cero(80642))
+    # resultado True
+print(hay_cero(351733))
+  # resultado False
+
+'''
+5 - Es binario
+Desarrolle un programa que diga si un número es binario o no.
+Investigar qué es un número binario
+e:
+s:
+r:
+'''
+
+def esBinario(num):
+    return
+
+print(esBinario(101002))  # False
+print(esBinario(111001110))  # True
+
+'''
+6. Encuentre los errores en la siguiente función e indique
+las entradas, salidas, restricciones y qué hace la función.
+
+def q(n):
+    t = 0
+    while n != 0:
+        if (n % 10 = 1):
+            t + 1
+            n //= 10
+        else:
+            n /= 10
+
+'''
+
+'''
+7. Escriba una función booleana iguales(num) que recibe un número
+entero y verifica si el primer y el último dígito del número son iguales.
+e:
+s:
+r:
+'''
+
+def iguales(num):
+    return
+
+print(iguales(80642))  # False
+print(iguales(351733))    # True
+
+'''
+8 - Desarrolle un programa que verifique si los dígitos de un número8
+están ordenados de mayor a menor.
+e:
+s:
+r:
+'''
+
+def estanOrdenados(num):
+    return
+
+print(estanOrdenados(8532))    # True
+print(estanOrdenados(13372))  # False
+print(estanOrdenados(864322))  # True
+
+'''
+9. Analice la siguiente sumatoria:
+1, 2, 3, 4, 5, 6, ..., n
+Determine su fórmula y construya una función llamada sumatoria(n)
+que reciba como argumento un número entero y muestre (con print)
+la sumatoria desde 1 hasta el número dado.
+e:
+s:
+r:
+'''
+
+def sumatoria(n):
+    return
+
+print(sumatoria(4))
+1
+2
+3
+4
+print(sumatoria(7))
+1
+2
+3
+4
+5
+6
+7
+
+'''
+10. Analice la siguiente serie numérica:
+4, 6, 9, 6, 14, 6, 19, 6 ...
+Determine su fórmula y construya una función llamada serie(n)
+que reciba como argumento un número entero y muestre (con print)
+la serie que inicia desde 4 hasta la cantidad de números dados.
+e:
+s:
+r:
+'''
+
+def serie(n):
+    return
+
+print(serie(4))
+4
+6
+9
+6
+print(serie(9))
+4
+6
+9
+6
+14
+6
+19
+6
+24

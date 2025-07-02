@@ -1,0 +1,280 @@
+'''
+INDICACIONES:
+Programe cada uno de los ejercicios propuestos. Indique entradas, salidas
+y restricciones.
+Respete los nombres de función propuestos para que las pruebas le funcionen
+correctamente
+'''
+'''
+1 - Nombre del mes
+Dado un número entero positivo, retorne el nombre del
+mes que representa ese número. Por ejemplo, si es
+1 retorna Enero, si es 2 Febrero, etc. En caso de ser
+un número que no está entre 1 y 12, retorne indefinido
+'''
+#E:
+#S:
+#R:
+def nombreDelMes(numero):
+    return
+
+# Ejemplos de uso
+print(nombreDelMes(1))  # Output: Enero
+print(nombreDelMes(6))  # Output: Junio
+print(nombreDelMes(13))  # Output: Indefinido
+
+'''
+2 Nombre del día en idioma
+Dado un número de día entre 1 y 7
+y un string: EN, SP o PO retorne
+el nombre del día en EN inglés, SP español, PO portugues
+getDayName('EN', 1) retorna Monday
+getDayName('SP', 1) retorna Lunes
+getDayName('PO', 1) retorna Segunda-feira
+1 es lunes, 2 martes, 3 miércoles ... 7 es domingo
+'''
+#E:
+#S:
+#R:
+def getDayName(idioma, numero_dia):
+    return
+
+# Ejemplos de uso
+print(getDayName('EN', 1))  # Output: Monday
+print(getDayName('SP', 1))  # Output: Lunes
+print(getDayName('PO', 1))  # Output: Segunda-feir
+
+'''
+#3 - Tipo de triángulo
+#Escribir una función llamada tipoDeTriangulo que
+tome las longitudes de los tres lados de un triángulo
+como entrada y devuelva el tipo de triángulo según
+las siguientes reglas:
+Si todos los lados son iguales, devolver "Equilátero".
+Si exactamente dos lados son iguales, devolver "Isósceles".
+Si ningún lado es igual a otro, devolver "Escaleno".
+'''
+#E: lado1, lado2, lado3
+#S: string con el tipo de triangulo
+#R:
+def tipoDeTriangulo(lado1, lado2, lado3):
+    if lado1 == lado2 and lado2 == lado3:
+        return 'Equilátero'
+    elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
+        return 'Isósceles'
+    else:
+        return 'Escaleno'
+
+# Ejemplos de uso
+print(tipoDeTriangulo(5, 5, 5))  # Output: Equilátero
+print(tipoDeTriangulo(5, 5, 4))  # Output: Isósceles
+print(tipoDeTriangulo(3, 4, 6))  # Output: Escaleno
+
+'''
+4 - Horario de trabajo:
+Escribir una función llamada esHorarioDeTrabajo que tome un número entero como entrada,
+representando la hora actual en formato de 24 horas, y devuelva un mensaje indicando si
+la persona debería estar trabajando o no. Si la hora está entre las 9 y las 17 (inclusive),
+devolver True. En caso contrario, devolver False
+'''
+#E:
+#S:
+#R:
+def esHorarioDeTrabajo(hora):
+    return
+
+# Ejemplos de uso
+print(esHorarioDeTrabajo(12))  # Output: True
+print(esHorarioDeTrabajo(20))  # Output: False
+print(esHorarioDeTrabajo(9))    # Output: True
+
+'''
+5 - Determinar el tipo de año:
+Escribir una función llamada esBisciesto que tome un año como entrada y devuelva True indicando
+que es un año bisiesto o False en otro caso.
+Si el año es divisible por 4 pero no por 100, o es divisible por 400, entonces es un año bisiesto.
+De lo contrario, no lo es.
+'''
+#E:
+#S:
+#R:
+def esBisiesto(año):
+    return
+
+# Ejemplos de uso
+print(esBisiesto(2020))  # Output: True
+print(esBisiesto(2021))  # Output: False
+print(esBisiesto(2000))  # Output: True
+
+'''
+6 - Categorización de edades:
+Escribir una función llamada categorizarEdad que tome la edad de una persona como entrada y
+devuelva una categoría según las siguientes reglas:
+
+Si la edad es menor de 13, devolver "Niño".
+Si la edad está entre 13 y 19 (inclusive), devolver "Adolescente".
+Si la edad está entre 20 y 64 (inclusive), devolver "Adulto".
+Si la edad es mayor o igual a 65, devolver "Adulto mayor".
+'''
+#E:
+#S:
+#R:
+def categorizarEdad(edad):
+    return
+
+# Ejemplos de uso
+print(categorizarEdad(8))    # Output: Niño
+print(categorizarEdad(16))  # Output: Adolescente
+print(categorizarEdad(35))  # Output: Adulto
+print(categorizarEdad(70))  # Output: Adulto mayor
+
+'''
+7 -  Determinar el mayor de tres números:
+Escribir una función llamada mayorDeTres que tome tres números como entrada y devuelva el número más grande.
+'''
+#E:
+#S:
+#R:
+def mayorDeTres(num1, num2, num3):
+    return
+
+# Ejemplos de uso
+print(mayorDeTres(10, 5, 8))    # Output: 10
+print(mayorDeTres(5, 10, 8))    # Output: 10
+print(mayorDeTres(5, 8, 10))    # Output: 10
+
+'''
+8 - Calculadora de impuestos:
+Escribir una función llamada calcularImpuestos que tome el salario anual de una persona como entrada y devuelva
+la cantidad de impuestos a pagar según las siguientes reglas:
+Si el salario es menor o igual a 50,000, no hay impuestos.
+Si el salario está entre 50,001 y 100,000 (inclusive), se aplica un impuesto del 10%.
+Si el salario es mayor que 100,000, se aplica un impuesto del 20%.
+'''
+#E:
+#S:
+#R:
+def calcularImpuestos(salario_anual):
+    return
+
+# Ejemplos de uso
+print(calcularImpuestos(40000))    # Output: 0 (sin impuestos)
+print(calcularImpuestos(60000))    # Output: 6000 (10% de impuestos)
+print(calcularImpuestos(120000))  # Output: 24000 (20% de impuestos)
+
+'''
+9 - Determinar el tipo de triángulo por sus ángulos:
+Escribir una función llamada tipoDeTrianguloPorAngulos que tome tres ángulos como entrada (en grados) y devuelva
+el tipo de triángulo según sus ángulos. Un triángulo rectángulo tiene un ángulo recto (90 grados), un triángulo
+obtuso tiene un ángulo mayor a 90 grados, y un triángulo agudo tiene todos los ángulos menores a 90 grados.
+'''
+#E:
+#S:
+#R:
+def tipoDeTrianguloPorAngulos(angulo1, angulo2, angulo3):
+    return
+
+# Ejemplos de uso
+print(tipoDeTrianguloPorAngulos(90, 45, 45))    # Output: Triángulo rectángulo
+print(tipoDeTrianguloPorAngulos(100, 40, 40))    # Output: Triángulo obtuso
+print(tipoDeTrianguloPorAngulos(60, 60, 60))    # Output: Triángulo agudo
+
+'''
+10 - Conversiones
+Haga una función convertir, que recidas dos unidades de medida y un número y retorne la conversión de la unidad de medida 1
+a la unidad de medida 2. Para esto considere conversiones:
+de pulgadas a cm y viceversa
+de grados C a grados F y viceversa
+de kg a libras y viceversa
+
+Por ejemplo convertir('cm', 'pulgadas', 30) retorna 11.811 >>> que son 30 cm en pulgadas
+Por ejemplo convertir('C', 'F', 180) retorna 356 >>> que son 180 grados centrígrados  en Fahrenheit
+'''
+#E:
+#S:
+#R:
+def convertir(unidadOrigen, unidadDestino, valor):
+    return
+
+# Ejemplos de uso
+print(convertir('cm', 'pulgadas', 30))    # Output: 11.811 (30 cm en pulgadas)
+print(convertir('C', 'F', 180))          # Output: 356 (180 grados C en Fahrenheit)
+
+'''
+11. dado una edad retorne el string Mayor si es mayor de edad, Menor en otro caso
+'''
+#E:
+#S:
+#R:
+
+def mayorDeEdad (edad):
+        return
+
+print(mayorDeEdad(10), 10)
+print(mayorDeEdad(18), 18)
+print(mayorDeEdad(50), 50)
+
+'''12. Haga un programa que retorne True si una persona es mayor de edad.
+A partir de los 18 años inclusive, se es mayor de edad.
+'''
+#E:
+#S:
+#R:
+def isAdult (age):
+        return
+
+'''13
+dada la edad y la altura de una persona
+retorne True si se puede subir a una montaña
+rusa, False si no. Para subirse a una montaña
+rusa debe ser mayor de edad y medir al menos
+160 cm y no más que 220 cm.
+'''
+#E:
+#S:
+#R:
+def verifyRollerCoasterAccess(age, height):
+        #return isAdult(age) and height >= 160 and height <= 220
+        if isAdult(age) and height >= 160 and height <= 220:
+                return True
+        return False
+
+print(verifyRollerCoasterAccess(18, 170))
+print(verifyRollerCoasterAccess(20, 200))
+print(verifyRollerCoasterAccess(20, 150))
+print(verifyRollerCoasterAccess(7, 170))
+
+''' 14
+dado el nombre de una persona, si esta se
+llama Maria o Juan, debe retornar un saludo como
+Hola Maria! u Hola Juancho!
+En caso contrario, debe retornar
+Hola nombreDado, no te conozco!
+
+NOTA: los string se concatenan, utilizando la suma +
+    Ejemplo: 'Hola ' + 'Juan'    >>>  Hola Juan
+'''
+#E:
+#S:
+#R:
+def saludar(nombre):
+        return
+
+print(saludar('Maria'))
+print(saludar('Juan'))
+print(saludar('Diego'))
+
+''' 15
+dada una letra, retorne true si es vocal
+false en otro caso
+Ejemplo esVocal ('x') es False
+      esVocal('e') es True
+'''
+#E:
+#S:
+#R:
+def esVocal(letra):
+        return
+print(esVocal('A'))
+print(esVocal('e'))
+print(esVocal('x'))
